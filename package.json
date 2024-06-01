@@ -2,7 +2,7 @@
     "name": "p4-backend-2024",
     "module": "src/server.ts",
     "scripts": {
-        "dev": "bun run src/server.ts",
+        "dev": "bun --hot run src/server.ts",
         "seed": "bunx prisma db push --force-reset && bun run prisma/seed.ts"
     },
     "type": "module",

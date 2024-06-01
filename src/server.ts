@@ -1,7 +1,8 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import { $ } from "bun";
+
+import storiesRouter from "./routes/storiesEndpoints";
 
 const app = express();
 
@@ -9,9 +10,7 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
-app.get("/", async (req, res) => {
-    res.status(200).json({ ok: true, message: "Hello World!" });
-});
+app.use("/api/stories", storiesRouter);
 
 const { PORT } = process.env || 8080;
 
