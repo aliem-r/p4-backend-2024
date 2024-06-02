@@ -4,10 +4,25 @@ import { catchErrors } from "../utils/errors";
 
 const router = Router();
 
+/*
+Stories Endpoints:
+
+    GET /stories
+    GET /stories/:id
+    POST /stories
+    PUT /stories/:id
+    DELETE /stories/:id
+*/
+
 router.get(
     "/",
     catchErrors(async (req, res) => {
-        const stories = await db.story.findMany();
+        const stories = await db.story.findMany({
+            include: {
+                author: true,
+                category: true,
+            },
+        });
         res.status(200).json(stories);
     })
 );
@@ -17,8 +32,10 @@ router.get(
     catchErrors(async (req, res) => {
         const { id } = req.params;
         const story = await db.story.findUniqueOrThrow({
-            where: {
-                id: Number(id),
+            where: { id: Number(id) },
+            include: {
+                author: true,
+                category: true,
             },
         });
         res.status(200).json(story);
@@ -59,9 +76,7 @@ router.put(
         if (category) categoryId = (await db.category.findUniqueOrThrow({ where: { name: category }, select: { id: true } })).id;
 
         const story = await db.story.update({
-            where: {
-                id: Number(id),
-            },
+            where: { id: Number(id) },
             data: {
                 title,
                 summary,
@@ -80,22 +95,10 @@ router.delete(
     catchErrors(async (req, res) => {
         const { id } = req.params;
         const story = await db.story.delete({
-            where: {
-                id: Number(id),
-            },
+            where: { id: Number(id) },
         });
         res.status(200).json(story);
     })
 );
 
 export default router;
-
-/*
-Stories Endpoints:
-
-    GET /stories
-    GET /stories/:id
-    POST /stories
-    PUT /stories/:id
-    DELETE /stories/:id
-*/

@@ -19,9 +19,9 @@ model Story {
   summary         String
   body            String
   publicationDate DateTime
-  author          Author   @relation(fields: [authorId], references: [id])
+  author          Author   @relation(fields: [authorId], references: [id], onDelete: Cascade)
   authorId        Int
-  category        Category @relation(fields: [categoryId], references: [id])
+  category        Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
   categoryId      Int
 }
 
@@ -36,6 +36,7 @@ model Author {
 
 model Category {
   id          Int     @id @default(autoincrement())
+  slug        String  @unique
   name        String  @unique
   description String
   Story       Story[]

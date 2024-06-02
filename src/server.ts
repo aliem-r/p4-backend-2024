@@ -3,6 +3,8 @@ import morgan from "morgan";
 import cors from "cors";
 
 import storiesRouter from "./routes/storiesEndpoints";
+import authorsRouter from "./routes/authorsEndpoints";
+import categoriesRouter from "./routes/categoriesEndpoints";
 
 import { defaultErrorHandler } from "./utils/errors";
 
@@ -13,6 +15,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 app.use("/api/stories", storiesRouter);
+app.use("/api/authors", authorsRouter);
+app.use("/api/categories", categoriesRouter);
 
 app.use(defaultErrorHandler);
 

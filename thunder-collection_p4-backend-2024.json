@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "p4-backend-2024",
     "collectionId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
-    "dateExported": "2024-06-02T16:48:20.233Z",
+    "dateExported": "2024-06-02T18:32:33.651Z",
     "version": "1.2",
     "folders": [
         {
@@ -11,6 +11,20 @@
             "containerId": "",
             "created": "2024-06-01T17:06:55.474Z",
             "sortNum": 10000
+        },
+        {
+            "_id": "99a08ab0-bf59-4138-8bff-ced388e09434",
+            "name": "authors",
+            "containerId": "",
+            "created": "2024-06-02T17:13:28.311Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "01477e13-f5cb-41bd-b040-5d4bd079eef2",
+            "name": "categories",
+            "containerId": "",
+            "created": "2024-06-02T17:55:42.369Z",
+            "sortNum": 30000
         }
     ],
     "requests": [
@@ -27,6 +41,30 @@
             "headers": []
         },
         {
+            "_id": "0f53266d-d8d7-465a-96a2-bd1c95c69ec6",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "99a08ab0-bf59-4138-8bff-ced388e09434",
+            "name": "GET /",
+            "url": "/authors",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-02T17:13:28.311Z",
+            "modified": "2024-06-02T17:24:12.768Z",
+            "headers": []
+        },
+        {
+            "_id": "45bdcd2f-622c-462b-8728-b5f8d62106d4",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "01477e13-f5cb-41bd-b040-5d4bd079eef2",
+            "name": "GET /",
+            "url": "/categories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-02T17:55:42.369Z",
+            "modified": "2024-06-02T17:56:02.938Z",
+            "headers": []
+        },
+        {
             "_id": "bf5d8e18-ad54-4e12-aa1b-8747660b34be",
             "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
             "containerId": "a1090b33-43b4-474f-988e-a2b878699722",
@@ -36,6 +74,30 @@
             "sortNum": 20000,
             "created": "2024-06-02T09:51:04.114Z",
             "modified": "2024-06-02T10:25:48.028Z",
+            "headers": []
+        },
+        {
+            "_id": "b6cf22c7-0449-43a2-a207-3653efd34c3b",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "99a08ab0-bf59-4138-8bff-ced388e09434",
+            "name": "GET /:username",
+            "url": "/authors/historiasencantadas",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-02T17:13:28.312Z",
+            "modified": "2024-06-02T17:26:21.149Z",
+            "headers": []
+        },
+        {
+            "_id": "0f2becd2-373d-4031-81c0-da96ed5a4c1d",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "01477e13-f5cb-41bd-b040-5d4bd079eef2",
+            "name": "GET /:category",
+            "url": "/categories/Navidad",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-02T17:55:42.370Z",
+            "modified": "2024-06-02T17:56:49.618Z",
             "headers": []
         },
         {
@@ -52,6 +114,40 @@
             "body": {
                 "type": "json",
                 "raw": "{\n  \"title\": \"El Milagro de Navidad en el Pueblo Nevado\",\n  \"summary\": \"Un niño y su perro encuentran el verdadero espíritu de la Navidad en su pueblo nevado.\",\n  \"body\": \"En un pequeño pueblo cubierto de nieve, vivía un niño llamado Tomás que siempre esperaba con ansias la Navidad. Sin embargo, ese año, una tormenta había dejado a muchas familias sin electricidad y sin posibilidad de celebrar como solían hacerlo. Tomás, preocupado por sus vecinos, decidió hacer algo al respecto. \\r\\n\\r\\nAcompañado de su fiel perro Max, Tomás recorrió el pueblo recogiendo velas, mantas y alimentos de su casa y de los amigos que aún tenían provisiones. Juntos, distribuyeron todo lo que pudieron para ayudar a aquellos que más lo necesitaban. \\r\\n\\r\\nUna noche, mientras caminaban de regreso a casa bajo la luz de la luna, Tomás y Max vieron una figura brillante en el cielo. Era un ángel que había venido a agradecerle por su bondad y a devolver la esperanza al pueblo. \\\"El verdadero espíritu de la Navidad vive en tu corazón, Tomás\\\", dijo el ángel, y con un destello, todo el pueblo se iluminó con luces cálidas y festivas. \\r\\n\\r\\nLas familias salieron de sus casas, cantaron villancicos y compartieron la alegría de estar juntos. Tomás y Max se sentaron junto al árbol de Navidad en la plaza, sintiendo el calor de la comunidad y sabiendo que habían presenciado un verdadero milagro navideño.\",\n  \"author\": \"relatosfantasticos\",\n  \"category\": \"Navidad\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "61220f40-2b90-4a7e-a2cc-27c1a8b743af",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "99a08ab0-bf59-4138-8bff-ced388e09434",
+            "name": "POST /",
+            "url": "/authors",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-02T17:13:28.313Z",
+            "modified": "2024-06-02T17:32:30.419Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"aliem\",\n  \"fullName\": \"Ali EM\",\n  \"biography\": \"Ali EM fusiona su pasión por la ciencia ficción y la aventura en historias que llevan a los lectores a mundos fascinantes y llenos de sorpresas.\",\n  \"avatar\": \"avatars/c2j5d4j4h1g56l12.jpg\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "38e77f10-378c-41c2-96fe-897436b10367",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "01477e13-f5cb-41bd-b040-5d4bd079eef2",
+            "name": "POST /",
+            "url": "/categories",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-02T17:55:42.371Z",
+            "modified": "2024-06-02T18:31:40.248Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"slug\": \"terror\",\n  \"name\": \"Terror\",\n  \"description\": \"Historias de terror para los más valientes.\"\n}",
                 "form": []
             }
         },
@@ -73,6 +169,40 @@
             }
         },
         {
+            "_id": "fe50ccad-0901-403f-98bf-389e123c256c",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "99a08ab0-bf59-4138-8bff-ced388e09434",
+            "name": "PUT /:username",
+            "url": "/authors/relatosfantasticos",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-06-02T17:13:28.314Z",
+            "modified": "2024-06-02T18:11:50.148Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"aliem-r\",\n  \"avatar\": \"avatars/b5k3l8j4h132nh3l.jpg\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "47f9b793-eab2-4b34-b11f-a7b757b70682",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "01477e13-f5cb-41bd-b040-5d4bd079eef2",
+            "name": "PUT /:category",
+            "url": "/categories/terror",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-06-02T17:55:42.372Z",
+            "modified": "2024-06-02T18:14:34.268Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"Cuentos escalofriantes para los verdaderos audaces.\"\n}",
+                "form": []
+            }
+        },
+        {
             "_id": "a91ad585-158f-4d59-a3ff-3769b32353fb",
             "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
             "containerId": "a1090b33-43b4-474f-988e-a2b878699722",
@@ -83,6 +213,30 @@
             "created": "2024-06-02T16:39:02.970Z",
             "modified": "2024-06-02T16:45:41.607Z",
             "headers": []
+        },
+        {
+            "_id": "5fe67f2f-b3e3-4d63-a59a-b9f898ec78be",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "99a08ab0-bf59-4138-8bff-ced388e09434",
+            "name": "DELETE /:id",
+            "url": "/authors/creadordesuenos",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-06-02T17:13:28.315Z",
+            "modified": "2024-06-02T18:12:26.809Z",
+            "headers": []
+        },
+        {
+            "_id": "f881272d-7324-4abe-93d7-ee7a781d7d7c",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "01477e13-f5cb-41bd-b040-5d4bd079eef2",
+            "name": "DELETE /:id",
+            "url": "/categories/valores",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-06-02T17:55:42.373Z",
+            "modified": "2024-06-02T18:32:08.488Z",
+            "headers": []
         }
     ],
     "settings": {
@@ -90,5 +244,5 @@
             "baseUrl": "http://localhost:8888/api"
         }
     },
-    "ref": "2ksDD7GvIjbU2iaVTBAwRU405lsUpvWFac6ynBKUj2Pre-S-MX29jloUSfUusRhtKiandXFXlBA-Ys7Jv8nhJQ"
+    "ref": "2ksDD7GvIjbU2iaVTBAwRQ4NGWx_3QSDI2lOg5RSMAhDgrH4hqGXsOS3rzVR_4ExfY8buDfXGv94TJ6dcWYdmg"
 }

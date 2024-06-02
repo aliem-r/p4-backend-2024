@@ -35,38 +35,47 @@ const authorsData = [
 
 const categoriesData = [
     {
+        slug: "aventuras",
         name: "Aventuras",
         description: "Historias llenas de emoción y viajes épicos.",
     },
     {
+        slug: "fantasia",
         name: "Fantasía",
         description: "Cuentos mágicos y mundos maravillosos.",
     },
     {
+        slug: "naturaleza",
         name: "Naturaleza",
         description: "Relatos sobre la belleza y el misterio de la naturaleza.",
     },
     {
+        slug: "amistad",
         name: "Amistad",
         description: "Historias sobre la importancia de la amistad y el compañerismo.",
     },
     {
+        slug: "valores",
         name: "Valores",
         description: "Cuentos que enseñan valores y lecciones importantes.",
     },
     {
+        slug: "animales",
         name: "Animales",
         description: "Relatos protagonizados por animales adorables y valientes.",
     },
     {
+        slug: "cienciaficcion",
         name: "Ciencia Ficción",
         description: "Historias futuristas y viajes espaciales.",
     },
     {
+        slug: "navidad",
         name: "Navidad",
         description: "Historias mágicas sobre la época navideña.",
     },
     {
+        slug: "educativo",
         name: "Educativo",
         description: "Cuentos que enseñan sobre diferentes temas y conocimientos.",
     },
