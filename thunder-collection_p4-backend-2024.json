@@ -1,0 +1,94 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "p4-backend-2024",
+    "collectionId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+    "dateExported": "2024-06-02T16:48:20.233Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "a1090b33-43b4-474f-988e-a2b878699722",
+            "name": "stories",
+            "containerId": "",
+            "created": "2024-06-01T17:06:55.474Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "882458a2-9680-479f-b528-59576d887e60",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "a1090b33-43b4-474f-988e-a2b878699722",
+            "name": "GET /",
+            "url": "/stories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-01T14:35:15.451Z",
+            "modified": "2024-06-02T09:44:29.788Z",
+            "headers": []
+        },
+        {
+            "_id": "bf5d8e18-ad54-4e12-aa1b-8747660b34be",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "a1090b33-43b4-474f-988e-a2b878699722",
+            "name": "GET /:id",
+            "url": "/stories/2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-02T09:51:04.114Z",
+            "modified": "2024-06-02T10:25:48.028Z",
+            "headers": []
+        },
+        {
+            "_id": "e2fd05e3-e4dd-4a2c-9f3c-57891c971113",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "a1090b33-43b4-474f-988e-a2b878699722",
+            "name": "POST /",
+            "url": "/stories",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-02T10:25:59.170Z",
+            "modified": "2024-06-02T11:20:09.750Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"El Milagro de Navidad en el Pueblo Nevado\",\n  \"summary\": \"Un niño y su perro encuentran el verdadero espíritu de la Navidad en su pueblo nevado.\",\n  \"body\": \"En un pequeño pueblo cubierto de nieve, vivía un niño llamado Tomás que siempre esperaba con ansias la Navidad. Sin embargo, ese año, una tormenta había dejado a muchas familias sin electricidad y sin posibilidad de celebrar como solían hacerlo. Tomás, preocupado por sus vecinos, decidió hacer algo al respecto. \\r\\n\\r\\nAcompañado de su fiel perro Max, Tomás recorrió el pueblo recogiendo velas, mantas y alimentos de su casa y de los amigos que aún tenían provisiones. Juntos, distribuyeron todo lo que pudieron para ayudar a aquellos que más lo necesitaban. \\r\\n\\r\\nUna noche, mientras caminaban de regreso a casa bajo la luz de la luna, Tomás y Max vieron una figura brillante en el cielo. Era un ángel que había venido a agradecerle por su bondad y a devolver la esperanza al pueblo. \\\"El verdadero espíritu de la Navidad vive en tu corazón, Tomás\\\", dijo el ángel, y con un destello, todo el pueblo se iluminó con luces cálidas y festivas. \\r\\n\\r\\nLas familias salieron de sus casas, cantaron villancicos y compartieron la alegría de estar juntos. Tomás y Max se sentaron junto al árbol de Navidad en la plaza, sintiendo el calor de la comunidad y sabiendo que habían presenciado un verdadero milagro navideño.\",\n  \"author\": \"relatosfantasticos\",\n  \"category\": \"Navidad\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f848953e-cf22-4a75-af10-3f5628723651",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "a1090b33-43b4-474f-988e-a2b878699722",
+            "name": "PUT /:id",
+            "url": "/stories/8",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-06-02T11:34:15.287Z",
+            "modified": "2024-06-02T16:42:30.118Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Max: El Robot Amigable\",\n  \"summary\": \"Un robot educa a los niños sobre tecnología y amistad.\",\n  \"category\": \"Amistad\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a91ad585-158f-4d59-a3ff-3769b32353fb",
+            "colId": "48c93a92-62ec-4f6c-8c20-e726ee8b7add",
+            "containerId": "a1090b33-43b4-474f-988e-a2b878699722",
+            "name": "DELETE /:id",
+            "url": "/stories/5",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-06-02T16:39:02.970Z",
+            "modified": "2024-06-02T16:45:41.607Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:8888/api"
+        }
+    },
+    "ref": "2ksDD7GvIjbU2iaVTBAwRU405lsUpvWFac6ynBKUj2Pre-S-MX29jloUSfUusRhtKiandXFXlBA-Ys7Jv8nhJQ"
+}
