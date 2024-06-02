@@ -4,7 +4,7 @@ Esta aplicación es un sistema de gestión de cuentos infantiles que permite alm
 
 El modelo de datos incluye las siguientes entidades: `Author`, `Category`, y `Story` relacionadas de la siguiente manera:
 
-<img src="https://raw.githubusercontent.com/your-username/p4-backend-2024/main/prisma-erd.svg" width="500">
+<img src="https://raw.githubusercontent.com/aliem-r/p4-backend-2024/9b37a96260cd772ece492473b847e5352d69a563/prisma-erd.svg" width="500">
 
 ## Requisitos previos
 
